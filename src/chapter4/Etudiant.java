@@ -2,12 +2,17 @@ package chapter4;
 
 public  class Etudiant {
 	
-	public Etudiant() {} // constructeur par défaut
+	public Etudiant() {
+		System.out.println("Constructeur par defaut");
+	} // constructeur par défaut
 	public Etudiant(int cin) {
 		
 		this(); // appel au constructeur par défaut
+		System.out.println("Constructeur avec 1 param");
 	}
-	public Etudiant(int cin, int age) {}
+	public Etudiant(int cin, int age) {
+		this(20); // appel au constructeur avec un seul paramètre
+	}
 	
 	private int cin;
 	int age; // visibilité default; package private
